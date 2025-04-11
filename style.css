@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 30px;
+    width: 393px;
+    height: 780px;
+    position: relative;
+    background: linear-gradient(166deg, #FCFBFB 0%, #737373 100%);
+    overflow: hidden;
+}
+
+.main-image {
+    width: 201px;
+    height: 247px;
+    left: 92px;
+    top: 106px;
+    position: absolute;
+    box-shadow: 8px 11px 10px rgba(0, 0, 0, 0.39);
+}
+
+.title {
+    width: 135px;
+    height: 25px;
+    left: 129px;
+    top: 56px;
+    position: absolute;
+    text-align: center;
+    color: #1A1A1A;
+    font-size: 36px;
+    font-family: Joan;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.artist {
+    width: 163px;
+    height: 25px;
+    left: 123px;
+    top: 378px;
+    position: absolute;
+    text-align: center;
+    color: #1A1A1A;
+    font-size: 24px;
+    font-family: Joan;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.description {
+    width: 267px;
+    height: 121px;
+    left: 63px;
+    top: 456px;
+    position: absolute;
+    text-align: justify;
+    color: #242424;
+    font-size: 20px;
+    font-family: Joan;
+    font-weight: 400;
+    line-height: 29px;
+    word-wrap: break-word;
+}
+
+#up-arrow {
+    left: 187px;
+    top: 590px;
+    position: absolute;
+}
+
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    transition: width 0.1s linear;
+    border-radius: 3px;
+    /* background: black; */
+}
+
+.bar-track {
+    top: 610px;
+    width: 80%;
+    height: 2px;
+    background: rgb(179, 177, 177);
+    opacity: 1;
+    position: relative;
+    border-radius: 3px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.small-bar {
+    width: 18px;
+    height: 1px;
+    left: 68px;
+    top: 653px;
+    position: absolute;
+    background: #242424;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    left: 85px;
+    top: 651px;
+    position: absolute;
+    background: #242424;
+    border-radius: 9999px;
+}
+
+
+
+.circle-button {
+    width: 79px;
+    height: 79px;
+    left: 157px;
+    top: 660px;
+    position: absolute;
+}
+
+.circle-inner {
+    width: 79px;
+    height: 79px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.icon-left {
+    width: 28px;
+    height: 28px;
+    left: 104px;
+    top: 689px;
+    position: absolute;
+}
+
+.icon-right {
+    width: 28px;
+    height: 28px;
+    left: 261px;
+    top: 689px;
+    position: absolute;
+}
+
+
+.subtitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 450px;
+    color: black;
+    display: flex;
+    font-family: Joan;
+    text-align: justify;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    font-size: 20px;
+    line-height: 29px;
+    word-wrap: break-word;
+    /* padding: 0 40px; */
+}
+
+#subtitle-box {
+    margin: 0 20px;
+    text-align: justify;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#subtitle-box {
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #000;
+    transition: width 0.1s ease;
+    border-radius: 3px;
+}
+
+
+.word {
+    transition: color 0.3s ease;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    .container {
+        height: auto;
+    }
+
+    .main-image {
+        width: 180px;
+        height: 220px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .artist {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .circle-button {
+        width: 60px;
+        height: 60px;
+    }
+}
